@@ -10,7 +10,7 @@ public class StaticProcessor {
         try {
             response.sendStaticResource();
         } catch (IOException e) {
-            e.printStackTrace();
+            // 不处理浏览器断开连接等错误
         }
     }
 }
